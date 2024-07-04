@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navber.css";
 
 const Navber = () => {
@@ -28,7 +28,7 @@ const Navber = () => {
     const navItems = <>
         {
             items.map((item, i) => (
-                <li key={i}><NavLink to={`${item?.path}`}>{item?.title}</NavLink></li>
+                <li key={i}><Link >{item?.title}</Link></li>
             ))
         }
     </>;

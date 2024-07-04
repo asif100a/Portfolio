@@ -1,11 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { RouterProvider } from 'react-router-dom'
-import Routers from './Project/reactRouters/Routers'
+import Root from './Project/layouts/root/Root'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ErrorPage from './Project/pages/ErrorPage/ErrorPage'
+import Home from './Project/pages/Home/Home'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <ErrorPage />
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={Routers} />
+    <RouterProvider router={router}> 
+      <Home />
+    </RouterProvider>
   </React.StrictMode>,
 )

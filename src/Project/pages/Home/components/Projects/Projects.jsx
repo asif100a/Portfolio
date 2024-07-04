@@ -47,7 +47,7 @@ const Projects = () => {
 
                                 <div className='w-fit mx-auto space-x-32'>
                                     <Link to={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                                            <button className='btn bg-[#02e71e] hover:bg-green-600 text-white font-bold'>Live Demo</button>
+                                            <button className='btn bg-[#02e71e] hover:bg-[#26b637] text-white font-bold'>Live Demo</button>
                                     </Link>
                                     
                                     <Link to={project.sourceCode} target="_blank" rel="noopener noreferrer">
