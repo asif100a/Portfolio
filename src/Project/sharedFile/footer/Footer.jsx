@@ -3,15 +3,17 @@ import { LiaFacebook } from "react-icons/lia";
 import { MdWhatsapp } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import {Link as Scroll} from "react-scroll";
 
 const Footer = () => {
     return (
         <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
-                <a className="link link-hover">About</a>
-                <a className="link link-hover">Skills</a>
-                <a className="link link-hover">Projects</a>
-                <a className="link link-hover">Contact</a>
+                <Scroll to="about" smooth={true} duration={600} className="link link-hover">About</Scroll>
+                <Scroll to="education" smooth={true} duration={600} className="link link-hover">Education</Scroll>
+                <Scroll to="skills" smooth={true} duration={600} className="link link-hover">Skills</Scroll>
+                <Scroll to="projects" smooth={true} duration={600} className="link link-hover">Projects</Scroll>
+                <Scroll to="contact" smooth={true} duration={600} className="link link-hover">Contact</Scroll>
             </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">

@@ -5,7 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const About = () => {
     return (
-        <section className="my-16 mx-32">
+        <section id="about" className="my-16 mx-32">
             <div>
                 <h1 className="text-4xl font-semibold">About Me</h1>
             </div>

@@ -16,7 +16,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="my-16 mx-32">
+        <section id="contact" className="my-16 mx-32">
             <div className="container px-6 mx-auto">
                 <div>
                     <h1 className="text-4xl font-semibold">Contact Me</h1>

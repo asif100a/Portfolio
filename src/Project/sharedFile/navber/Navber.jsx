@@ -1,26 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./navber.css";
 
 const Navber = () => {
     const items = [
         {
-            path: '/',
-            title: 'Home'
-        },
-        {
-            path: '/about',
+            path: 'about',
             title: 'About'
         },
         {
-            path: '/skills',
+            path: 'education',
+            title: 'Education'
+        },
+        {
+            path: 'skills',
             title: 'Skills'
         },
         {
-            path: '/projects',
+            path: 'projects',
             title: 'Projects'
         },
         {
-            path: '/contact',
+            path: 'contact',
             title: 'Contact'
         },
     ];
@@ -28,7 +28,7 @@ const Navber = () => {
     const navItems = <>
         {
             items.map((item, i) => (
-                <li key={i}><Link >{item?.title}</Link></li>
+                <li key={i}><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
             ))
         }
     </>;
@@ -56,6 +56,8 @@ const Navber = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         {navItems}
                     </ul>
+
+                    <p className="text-2xl font-semibold gradient-text">Front-End Developer</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
