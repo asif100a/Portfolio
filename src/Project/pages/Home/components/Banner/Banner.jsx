@@ -1,4 +1,5 @@
 import asifImg from "../../../../../assets/asif.png";
+import DownloadResume from "../downloadResume/DownloadResume";
 import "./banner.css";
 
 const Banner = () => {
@@ -17,6 +18,10 @@ const Banner = () => {
                         <div className="mt-10">
                             <h4 className="text-xl font-medium mb-3">Hi, there</h4>
                             <p className="w-[48rem]">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with the experience of <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i> and frameworks like <i>React</i>, <i>TailwindCSS</i> to create the best user inteface design, flexible, version control system management and user experience based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
+                        </div>
+
+                        <div className="mt-10">
+                            <DownloadResume />
                         </div>
                     </div>
                 </div>
