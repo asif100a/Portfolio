@@ -12,12 +12,12 @@ const Navber = () => {
             title: 'About'
         },
         {
-            path: '/projects',
-            title: 'Projects'
-        },
-        {
             path: '/skills',
             title: 'Skills'
+        },
+        {
+            path: '/projects',
+            title: 'Projects'
         },
         {
             path: '/contact',
