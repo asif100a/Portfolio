@@ -1,0 +1,24 @@
+.menu li > *:not(ul, .menu-title, details, .btn):active,
+.menu li > *:not(ul, .menu-title, details, .btn).active,
+.menu li > details > summary:active {
+    background-color: #fff;
+    border: 2px solid;
+    border-image:  linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
+    border-image-slice: 1;
+    color: orange;
+    font-weight: 600;
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn):hover{
+    background-color: #fff;
+    border-bottom: 2px solid;
+    border-image:  linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
+    border-image-slice: 1;
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn){
+    background-color: #fff;
+    height: fit-content;
+    padding: 4px 8px;
+    margin: 0px 4px;
+}
