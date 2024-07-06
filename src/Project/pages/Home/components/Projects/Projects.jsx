@@ -5,28 +5,28 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <section id='projects' className="my-16 mx-32">
+        <section id='projects' className="my-16 lg:mx-32 md:mx-6 mx-3">
             <div>
                 <h1 className="text-4xl font-semibold">My Projects</h1>
             </div>
 
-            <div className="container px-6 py-10 mx-auto">
+            <div className="container px-0 py-10 mx-auto">
                 <div className="grid grid-cols-1 gap-8 mt-8 ">
                     {projects.map((project, index) => (
                         <div key={index} className="overflow-hidden bg-cover rounded-lg h-96 group text-white"
                             style={{ backgroundImage: `url(${project.showImage})` }}>
                             <div
-                                className="flex flex-col justify-center w-full h-full px-24 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                                className="flex flex-col justify-center w-full h-full md:px-24 px-3 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
 
-                                <div className='space-y-3'>
-                                    <h2 className='text-2xl font-semibold'>{project.title}</h2>
-                                    <p>{project.description}</p>
+                                <div className='lg:space-y-3 space-y-2'>
+                                    <h2 className='md:text-2xl text-lg font-semibold'>{project.title}</h2>
+                                    <p className='md:text-base text-sm'>{project.description}</p>
                                 </div>
 
-                                <div className='flex gap-32 mt-6'>
+                                <div className='flex lg:gap-32 md:gap-12 gap-6 lg:mt-6 mt-3 md:text-base text-xs'>
                                     <div>
                                         <h4><strong>Technologies Used:</strong></h4>
-                                        <ul className='list-disc ml-8'>
+                                        <ul className='list-disc ml-8 md:w-40 w-auto'>
                                             {
                                                 project?.technologies?.map((technology, index) => (
                                                     <li key={index}>{technology}</li>
@@ -45,13 +45,13 @@ const Projects = () => {
                                     </div>
                                 </div>
 
-                                <div className='w-fit mx-auto space-x-32'>
+                                <div className='w-fit mx-auto flex md:gap-32 gap-12 lg:mt-0 mt-6'>
                                     <Link to={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                                            <button className='btn bg-[#02e71e] hover:bg-[#26b637] text-white font-bold'>Live Demo</button>
+                                            <button className='btn btn-sm bg-[#02e71e] hover:bg-[#26b637] text-white font-bold'>Live Demo</button>
                                     </Link>
                                     
                                     <Link to={project.sourceCode} target="_blank" rel="noopener noreferrer">
-                                            <button className="btn bg-[#e80202] hover:bg-red-700 text-white font-bold">Source Code</button>
+                                            <button className="btn btn-sm bg-[#e80202] hover:bg-red-700 text-white font-bold">Source Code</button>
                                     </Link>
                                 </div>
                             </div>

@@ -16,15 +16,15 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="my-16 mx-32">
-            <div className="container px-6 mx-auto">
+        <section id="contact" className="my-16 lg:mx-32 md:mx-6 mx-3">
+            <div className="container mx-auto">
                 <div>
                     <h1 className="text-4xl font-semibold">Contact Me</h1>
 
                     <div className="mt-6">
                         <h1 className="mt-2 text-xl font-semibold text-gray-800 md:text-2xl dark:text-white">{"Let's"} Connect!</h1>
 
-                        <p className="mt-3 text-gray-500 dark:text-gray-400 w-[36rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to reach out to me through the form below or connect with me on social media.</p>
+                        <p className="mt-3 text-gray-500 dark:text-gray-400 lg:w-[36rem] w-auto">{"I'm"} always open to new opportunities and collaborations. Feel free to reach out to me through the form below or connect with me on social media.</p>
                     </div>
                 </div>
 

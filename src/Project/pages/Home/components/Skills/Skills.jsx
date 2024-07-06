@@ -1,11 +1,11 @@
 const Skills = () => {
     return (
-        <section id="skills" className="my-16 mx-32">
+        <section id="skills" className="my-16 lg:mx-32 md:mx-6 mx-3">
             <div>
                 <h1 className="text-4xl font-semibold">My Skills</h1>
             </div>
 
-            <div className="mt-16 space-y-6">
+            <div className="lg:mt-16 mt-6 space-y-6">
                 <div>
                     <h2 className="text-2xl font-semibold">Front-End Development</h2>
                     <ul className="mt-4">

@@ -5,14 +5,14 @@ import 'react-tabs/style/react-tabs.css';
 
 const About = () => {
     return (
-        <section id="about" className="my-16 mx-32">
+        <section id="about" className="my-16 lg:mx-32 md:mx-6 mx-3">
             <div>
                 <h1 className="text-4xl font-semibold">About Me</h1>
             </div>
-            <div className="my-8">
-                <div className="flex gap-32">
+            <div className="my-6">
+                <div className="flex lg:flex-row flex-col lg:gap-32 gap-6">
                     <div>
-                        <img src={web_developmentImg} alt="" className="pt-12" />
+                        <img src={web_developmentImg} alt="" className="lg:pt-12 pt-2" />
                     </div>
                     <div>
                         <div>
@@ -20,7 +20,7 @@ const About = () => {
                         </div>
                         <div className="my-6 space-y-3">
                             <h3 className="text-lg font-medium mb-2">Hi,</h3>
-                            <p className="w-[24rem]">{"I'm"} N.M. Asif Sheikh, a passionate front-end web developer with a love for crafting beautiful and functional websites. With a strong foundation in React, I bring user-centric designs to life.</p>
+                            <p className="lg:w-[24rem]">{"I'm"} N.M. Asif Sheikh, a passionate front-end web developer with a love for crafting beautiful and functional websites. With a strong foundation in React, I bring user-centric designs to life.</p>
                         </div>
 
                         <div>
