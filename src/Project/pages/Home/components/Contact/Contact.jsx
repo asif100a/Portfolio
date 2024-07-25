@@ -1,19 +1,83 @@
-import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { MdWhatsapp } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-    } = useForm()
-    const onSubmit = (data) => {
-        console.log(data);
-    }
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    // const [formData, setFormData] = useState({
+    //     'name': '',
+    //     'email': '',
+    //     'subject': '',
+    //     'message': ''
+    // });
+
+    const handleNameChange = e => {
+        // setFormData({
+        //     ...formData,
+        //     [e.target.name]: e.target.value
+        // });
+        console.log(e.target.value);
+        setName(e.target.value);
+    };
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+        console.log(e.target.value);
+    };
+    
+    const handleSubjectChange = e => {
+        console.log(e.target.value);
+        setSubject(e.target.value);
+    };
+
+    const handleMessageChange = e => {
+        console.log(e.target.value);
+        setMessage(e.target.value);
+    };
+
+    
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(import.meta.env.VITE_EMAIL_SEND_PRIVATE_KEY)
+        
+        // Service id, template id, user id
+        const service_id = `${import.meta.env.VITE_EMAIL_SEND_SERVICE_ID}`;
+        const template_id = `${import.meta.env.VITE_EMAIL_SEND_TEMPLATE_ID}`;
+        const public_key = `${import.meta.env.VITE_EMAIL_SEND_PUBLIC_KEY}`;
+
+        const template = {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        };
+        console.log(template);
+
+        emailjs.send(service_id, template_id, template, public_key)
+            .then(() => {
+                toast.success('Message Sent Successfully!');
+
+                // Reset the form
+                // setFormData({
+                //     'name': '',
+                //     'email': '',
+                //     'subject': '',
+                //     'message': ''
+                // });
+            }).catch(error => {
+                toast.error('Failed to send the message, please try again.');
+                console.error('Error', error.message);
+            });
+    };
 
     return (
         <section id="contact" className="my-16 lg:mx-32 md:mx-6 mx-3">
@@ -74,25 +138,57 @@ const Contact = () => {
                     </div>
 
                     <div className="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form onSubmit={handleSubmit}>
                             <div className="-mx-2 md:items-center md:flex">
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Your Name</label>
-                                    <input type="text" placeholder="Your name" {...register("exampleRequired", { required: true })} className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                    {errors.exampleRequired && <span>This field is required</span>}
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your name"
+                                        value={name}
+                                        onChange={handleNameChange}
+                                        className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    />
+                                    {/* {errors.name && <span className="text-orange-600">This field is required</span>} */}
+                                </div>
+                                <div className="flex-1 px-2 mt-4 md:mt-0">
+                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Email address"
+                                        value={email}
+                                        onChange={handleEmailChange}
+                                        className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    />
+                                    {/* {errors.email && <span className="text-orange-600">This field is required</span>} */}
                                 </div>
                             </div>
 
                             <div className="mt-4">
-                                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                                <input type="email" placeholder="Email address" {...register("exampleRequired", { required: true })} className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                {errors.exampleRequired && <span>This field is required</span>}
+                                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Subject</label>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    value={subject}
+                                    onChange={handleSubjectChange}
+                                    className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                />
+                                {/* {errors.subject && <span className="text-orange-600">This field is required</span>} */}
                             </div>
 
                             <div className="w-full mt-4">
                                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                                <textarea {...register("exampleRequired", { required: true })} className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
-                                {errors.exampleRequired && <span>This field is required</span>}
+                                <textarea
+                                    name="message"
+                                    placeholder="Message"
+                                    value={message}
+                                    onChange={handleMessageChange}
+                                    className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                ></textarea>
+                                {/* {errors.message && <span className="text-orange-600">This field is required</span>} */}
                             </div>
 
                             <input type="submit" value={'Send message'} className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
@@ -101,6 +197,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Toaster />
         </section>
     );
 };
