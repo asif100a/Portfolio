@@ -4,19 +4,20 @@ import { MdWhatsapp } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import {Link as Scroll} from "react-scroll";
+import "./footer.css";
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="footer footer-center bg-gray-100 border-t-2 border-gray-300 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
-                <Scroll to="about" smooth={true} duration={600} className="link link-hover">About</Scroll>
-                <Scroll to="education" smooth={true} duration={600} className="link link-hover">Education</Scroll>
-                <Scroll to="skills" smooth={true} duration={600} className="link link-hover">Skills</Scroll>
-                <Scroll to="projects" smooth={true} duration={600} className="link link-hover">Projects</Scroll>
-                <Scroll to="contact" smooth={true} duration={600} className="link link-hover">Contact</Scroll>
+                <Scroll to="about" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">About</Scroll>
+                <Scroll to="education" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">Education</Scroll>
+                <Scroll to="skills" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">Skills</Scroll>
+                <Scroll to="projects" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">Projects</Scroll>
+                <Scroll to="contact" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">Contact</Scroll>
             </nav>
             <nav>
-                <div className="grid grid-flow-col gap-4">
+                <div className="flex gap-6 justify-center items-center">
                     <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank">
                         <CiLinkedin className="w-8 h-8 text-blue-500" />
                     </Link>
