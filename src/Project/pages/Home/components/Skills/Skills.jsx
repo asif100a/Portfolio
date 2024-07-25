@@ -10,7 +10,7 @@ const Skills = () => {
             </div>
 
             <div className="lg:mt-16 mt-6 space-y-6">
-                <div className="flex gap-12">
+                <div className="flex flex-col-reverse sm:flex-row gap-3 lg:gap-12">
                     <div>
                         <h2 className="text-2xl font-semibold">Front-End Development</h2>
                         <ul className="mt-4 list-circle ml-12">
@@ -22,13 +22,13 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <img src={skill_1} alt="Skill photo 1" className="w-[420px] h-[272px]" />
+                        <img src={skill_1} alt="Skill photo 1" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
                     </div>
                 </div>
 
-                <div className="flex gap-12">
+                <div className="flex flex-col sm:flex-row gap-3 lg:gap-12">
                     <div>
-                        <img src={skill_2} alt="Skill photo 2" className="w-[420px] h-[272px]" />
+                        <img src={skill_2} alt="Skill photo 2" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
                     </div>
 
                     <div>
@@ -41,7 +41,7 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div className="flex gap-12">
+                <div className="flex flex-col-reverse sm:flex-row gap-3 lg:gap-12">
                     <div>
                         <h2 className="text-2xl font-semibold">Tools & Technologies</h2>
                         <ul className="mt-4 list-circle ml-12">
@@ -53,7 +53,7 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <img src={skill_3} alt="Skill photo 3" className="w-[420px] h-[272px]" />
+                        <img src={skill_3} alt="Skill photo 3" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
                     </div>
                 </div>
             </div>

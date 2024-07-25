@@ -12,7 +12,7 @@ const About = () => {
             <div className="my-6">
                 <div className="flex lg:flex-row flex-col lg:gap-32 gap-6">
                     <div>
-                        <img src={web_developmentImg} alt="" className="lg:pt-12 pt-2" />
+                        <img src={web_developmentImg} alt="" className="lg:pt-12 pt-2 w-[430px] h-[230px] lg:w-auto lg:h-auto" />
                     </div>
                     <div>
                         <div>
@@ -42,11 +42,11 @@ const About = () => {
                                 </TabPanel>
                                 <TabPanel>
                                     <div>
-                                        <p className="w-[24rem]">I interest to write code and exploring new technologies.  When {"I'm"} not coding, I enjoy reading books, exploring youtube or google to improve my skills, and doing personal works. I believe that a balanced life fuels creativity and productivity.</p>
+                                        <p className="w-full sm:w-[24rem]">I interest to write code and exploring new technologies.  When {"I'm"} not coding, I enjoy reading books, exploring youtube or google to improve my skills, and doing personal works. I believe that a balanced life fuels creativity and productivity.</p>
                                     </div>
                                 </TabPanel>
                                 <TabPanel>
-                                    <p className="w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:your-email@example.com" className="text-blue-600 hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/your-profile" className="text-blue-600 hover:underline">LinkedIn</a>.</p>
+                                    <p className="w-full sm:w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:your-email@example.com" className="text-green-600 hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/your-profile" className="text-green-600 hover:underline">LinkedIn</a>.</p>
                                     <p className="mt-2 pb-3">{"Let's"} create something amazing together!</p>
                                 </TabPanel>
                             </Tabs>

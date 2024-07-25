@@ -34,9 +34,9 @@ const Navber = () => {
     </>;
 
     return (
-        <div className="navbar bg-gray-100">
-            <div className="navbar-start">
-                <div className="dropdown">
+        <div className="navbar  bg-gray-100 gradient-border-bottom">
+            <div className="lg:navbar-start flex-row-reverse lg:flex-row lg:w-1/2 w-full">
+                <div className="dropdown flex flex-row-reverse justify-between lg:inline-block lg:w-auto w-full">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -51,13 +51,14 @@ const Navber = () => {
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
+
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         {navItems}
                     </ul>
 
-                    <p className="text-2xl font-semibold gradient-text">Front-End Developer</p>
+                    <p className="text-3xl font-semibold gradient-text">Front-End Developer</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -65,8 +66,8 @@ const Navber = () => {
                     {navItems}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link to="contact" smooth={true} duration={600} className="btn btn-sm bg-white hover:bg-white shadow-none border-none bg-gradient-to-r from-[#FF0000] to-[#00FF00] text-white hover:bg-gradient-to-r hover:from-[#FF00009A] hover:to-[#00FF009A]">Contact me</Link>
+            <div className="navbar-end hidden lg:flex">
+                <Link to="contact" smooth={true} duration={600} className="btn btn-sm rounded-none bg-white hover:bg-white shadow-none border-none bg-gradient-to-r from-[#FF0000] to-[#00FF00] text-white hover:bg-gradient-to-r hover:from-[#FF00009A] hover:to-[#00FF009A]">Contact me</Link>
             </div>
         </div>
     );

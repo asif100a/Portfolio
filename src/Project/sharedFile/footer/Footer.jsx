@@ -8,7 +8,7 @@ import "./footer.css";
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-gray-100 border-t-2 border-gray-300 text-base-content rounded p-10">
+        <footer className="footer footer-center bg-gray-100 gradient-horizontal text-base-content rounded p-3 sm:p-10">
             <nav className="grid grid-flow-col gap-4">
                 <Scroll to="about" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">About</Scroll>
                 <Scroll to="education" smooth={true} duration={600} className="hover:cursor-pointer gradient-border">Education</Scroll>
