@@ -1,6 +1,6 @@
-import skill_1 from "../../../../../assets/skill-1.jpg";
 import skill_2 from "../../../../../assets/skill-2.jpeg";
 import skill_3 from "../../../../../assets/skill-3.jpeg";
+import Skill_1 from "./components/Skill_1";
 
 const Skills = () => {
     return (
@@ -10,21 +10,7 @@ const Skills = () => {
             </div>
 
             <div className="lg:mt-16 mt-6 space-y-6">
-                <div className="flex flex-col-reverse sm:flex-row gap-3 lg:gap-12">
-                    <div>
-                        <h2 className="text-2xl font-semibold">Front-End Development</h2>
-                        <ul className="mt-4 list-circle ml-12">
-                            <li><span className="font-bold">HTML5 & CSS3:</span> Expertise in building responsive, accessible, and well-structured web pages.</li>
-                            <li><span className="font-bold">JavaScript (ES6+):</span> Proficient in modern JavaScript features and best practices.</li>
-                            <li><span className="font-bold">React:</span> Skilled in developing dynamic single-page applications using React, including Hooks, Context API, and state management etc.</li>
-                            <li><span className="font-bold">Responsive Design:</span> Strong ability to create responsive layouts using CSS Flexbox, Grid, and media queries.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <img src={skill_1} alt="Skill photo 1" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
-                    </div>
-                </div>
+                <Skill_1 />
 
                 <div className="flex flex-col sm:flex-row gap-3 lg:gap-12">
                     <div>
