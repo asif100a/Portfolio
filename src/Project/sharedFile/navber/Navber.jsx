@@ -34,13 +34,13 @@ const Navber = () => {
     </>;
 
     return (
-        <div className="navbar  bg-gray-100 gradient-border-bottom">
+        <div className="navbar bg-[#0d1117] gradient-border-bottom">
             <div className="lg:navbar-start flex-row-reverse lg:flex-row lg:w-1/2 w-full">
                 <div className="dropdown flex flex-row-reverse justify-between lg:inline-block lg:w-auto w-full">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -58,7 +58,7 @@ const Navber = () => {
                         {navItems}
                     </ul>
 
-                    <p className="text-3xl font-semibold gradient-text">Front-End Developer</p>
+                    <p className="sm:text-3xl text-2xl font-semibold gradient-text flex justify-center items-center">Front-End Developer</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

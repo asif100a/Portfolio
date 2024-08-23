@@ -1,7 +1,7 @@
 .menu li>*:not(ul, .menu-title, details, .btn):active,
 .menu li>*:not(ul, .menu-title, details, .btn).active,
 .menu li>details>summary:active {
-    background-color: #fff;
+    background-color: #0d1117;
     border: 2px solid;
     border-image: linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
     border-image-slice: 1;
@@ -10,15 +10,16 @@
 }
 
 .menu li>*:not(ul, .menu-title, details, .btn):hover {
-    background-color: #fff;
+    background-color: #0d1117;
     border: 2px solid;
     border-image: linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
     border-image-slice: 1;
 }
 
 .menu li>*:not(ul, .menu-title, details, .btn) {
-    background-color: #fff;
+    background-color: #0d1117;
     border: 2px solid #fff;
+    color: white;
     height: fit-content;
     padding: 4px 8px;
     margin: 0px 4px;

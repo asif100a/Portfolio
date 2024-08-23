@@ -87,33 +87,33 @@ const Contact = () => {
                     <h1 className="text-4xl font-semibold">Contact Me</h1>
 
                     <div className="mt-6">
-                        <h1 className="mt-2 text-xl font-semibold text-gray-800 md:text-2xl dark:text-white">{"Let's"} Connect!</h1>
+                        <h1 className="mt-2 text-xl font-semibold md:text-2xl">{"Let's"} Connect!</h1>
 
-                        <p className="mt-3 text-gray-500 dark:text-gray-400 lg:w-[36rem] w-auto">{"I'm"} always open to new opportunities and collaborations. Feel free to reach out to me through the form below or connect with me on social media.</p>
+                        <p className="mt-3 lg:w-[36rem] w-auto">{"I'm"} always open to new opportunities and collaborations. Feel free to reach out to me through the form below or connect with me on social media.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
                         <div>
-                            <span className="inline-block p-2 text-white rounded-full gradient-background">
+                            <span className="inline-block p-2 rounded-full gradient-background">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                 </svg>
                             </span>
 
-                            <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
-                            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Contact me vai email.</p>
+                            <h2 className="mt-4 text-base font-medium">Email</h2>
+                            <p className="mt-2 text-sm">Contact me vai email.</p>
                             <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">nmasifsheikh2003@gmail.com</Link>
                         </div>
 
                         <div>
-                            <span className="inline-block p-2 text-white rounded-full gradient-background dark:bg-gray-800">
+                            <span className="inline-block p-2 rounded-full gradient-background dark:bg-gray-800">
                                 <CiLinkedin className="w-8 h-8 text-white" />
                             </span>
 
-                            <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Linked in</h2>
-                            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Contact and explore my linked in profile.</p>
+                            <h2 className="mt-4 text-base font-medium">Linked in</h2>
+                            <p className="mt-2 text-sm">Contact and explore my linked in profile.</p>
                             <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">Linked in profile</Link>
                         </div>
 
@@ -122,8 +122,8 @@ const Contact = () => {
                                 <VscGithub className="w-7 h-7 text-white" />
                             </span>
 
-                            <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Github</h2>
-                            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Check my github account and contact me.</p>
+                            <h2 className="mt-4 text-base font-medium">Github</h2>
+                            <p className="mt-2 text-sm">Check my github account and contact me.</p>
                             <Link to="https://github.com/asif100a" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">Github account</Link>
                         </div>
 
@@ -132,62 +132,62 @@ const Contact = () => {
                                 <MdWhatsapp className="w-8 h-8 text-white" />
                             </span>
 
-                            <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">{"What's"} app</h2>
-                            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Direct call or {"What's"} app:</p>
+                            <h2 className="mt-4 text-base font-medium">{"What's"} app</h2>
+                            <p className="mt-2 text-sm">Direct call or {"What's"} app:</p>
                             <span className="mt-2 text-sm text-green-600">+88 01608-898811</span>
                         </div>
                     </div>
 
-                    <div className="p-4 rounded-lg bg-white img-gradient-border md:p-8">
+                    <div className="p-4 rounded-lg bg-[#0d1117] text-white img-gradient-border md:p-8">
                         <form onSubmit={handleSubmit} className="">
                             <div className="-mx-2 md:items-center md:flex">
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
-                                    <label className="block mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">Your Name</label>
+                                    <label className="block mb-2 text-sm font-semibold">Your Name</label>
                                     <input
                                         type="text"
                                         name="name"
                                         placeholder="Your name"
                                         value={name}
                                         onChange={handleNameChange}
-                                        className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-red-50 border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
                                     {/* {errors.name && <span className="text-orange-600">This field is required</span>} */}
                                 </div>
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
-                                    <label className="block mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">Email address</label>
+                                    <label className="block mb-2 text-sm font-semibold">Email address</label>
                                     <input
                                         type="email"
                                         name="email"
                                         placeholder="Email address"
                                         value={email}
                                         onChange={handleEmailChange}
-                                        className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-red-50 border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
                                     {/* {errors.email && <span className="text-orange-600">This field is required</span>} */}
                                 </div>
                             </div>
 
                             <div className="mt-4">
-                                <label className="block mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">Subject</label>
+                                <label className="block mb-2 text-sm font-semibold">Subject</label>
                                 <input
                                     type="text"
                                     name="subject"
                                     placeholder="Subject"
                                     value={subject}
                                     onChange={handleSubjectChange}
-                                    className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-red-50 border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 />
                                 {/* {errors.subject && <span className="text-orange-600">This field is required</span>} */}
                             </div>
 
                             <div className="w-full mt-4">
-                                <label className="block mb-2 text-sm font-semibold text-gray-600 dark:text-gray-200">Message</label>
+                                <label className="block mb-2 text-sm font-semibold">Message</label>
                                 <textarea
                                     name="message"
                                     placeholder="Message"
                                     value={message}
                                     onChange={handleMessageChange}
-                                    className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-red-50 border border-gray-200 rounded-none md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full h-32 px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 ></textarea>
                                 {/* {errors.message && <span className="text-orange-600">This field is required</span>} */}
                             </div>

@@ -17,11 +17,11 @@ const Education = () => {
             <h1 className="text-4xl font-semibold">My Education</h1>
             <div className='flex gap-0 lg:gap-12 lg:flex-row flex-col lg:items-center items-start lg:space-y-0 space-y-6 lg:mt-12 mt-10'>
                 <div>
-                    <img src={webLearner} alt="" />
+                    <img src={webLearner} alt="" className='md:w-[27rem] lg:h-auto md:h-56 w-auto h-auto' />
                 </div>
                 <div>
                     {educationData.map((edu, index) => (
-                        <div key={index} className="lg:mt-12 space-y-2">
+                        <div key={index} className="space-y-2">
                             <h2 className='text-2xl'><span className='font-semibold'>Subject of Education:</span> {edu.degree}</h2>
                             <h3 className='text-lg'><span className='font-semibold'>Institution:</span> {edu.institution}</h3>
                             <p className='font-medium'>({edu.startYear} - {edu.endYear})</p>

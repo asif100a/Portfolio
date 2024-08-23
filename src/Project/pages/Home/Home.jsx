@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Navber />
-            <div className="bg-[#f7faf6]">
+            <div className="bg-[#0d1117] text-white">
                 <Banner />
                 <About />
                 <Education />
