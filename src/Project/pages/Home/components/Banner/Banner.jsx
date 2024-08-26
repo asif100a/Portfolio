@@ -17,7 +17,7 @@ const Banner = () => {
 
                         <div className="lg:mt-10 md:mt-5 mt-6">
                             <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                            <p className="lg:w-[48rem] md:w-[32rem] w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with the experience of <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i> and frameworks like <i>React</i>, <i>TailwindCSS</i> to create the best user inteface design, flexible, version control system management and user experience based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
+                            <p className="lg:w-[48rem] md:w-[32rem] w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
                         </div>
 
                         <div className="lg:mt-10 md:mt-5 mt-3">

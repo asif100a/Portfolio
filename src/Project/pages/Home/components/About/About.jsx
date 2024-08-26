@@ -20,7 +20,7 @@ const About = () => {
                         </div>
                         <div className="my-6 space-y-3">
                             <h3 className="text-lg font-medium mb-2">Hi,</h3>
-                            <p className="lg:w-[24rem]">{"I'm"} N.M. Asif Sheikh, a passionate front-end web developer with a love for crafting beautiful and functional websites. With a strong foundation in React, I bring user-centric designs to life.</p>
+                            <p className="lg:w-[24rem]">{"I'm"} N.M. Asif Sheikh is a passionate front-end web developer who loves crafting beautiful, and functional websites. With a strong foundation in React, I bring user-centric designs to life.</p>
                         </div>
 
                         <div>
