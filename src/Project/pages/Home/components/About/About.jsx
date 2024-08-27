@@ -1,9 +1,13 @@
+import { useState } from "react";
 import roundImg from "../../../../../assets/asif_round.png";
 import web_developmentImg from "../../../../../assets/web-development.jpeg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+// import 'react-tabs/style/react-tabs.css';
+import './about.css';
 
 const About = () => {
+    const [tabIndex, setTabIndex] = useState(0);
+
     return (
         <section id="about" className="my-16 lg:mx-32 md:mx-6 mx-3">
             <div>
@@ -24,11 +28,11 @@ const About = () => {
                         </div>
 
                         <div>
-                            <Tabs>
-                                <TabList>
-                                    <Tab>Skills</Tab>
-                                    <Tab>Interests</Tab>
-                                    <Tab>Get in Touch</Tab>
+                            <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} selectedTabClassName="custom-style">
+                                <TabList className={'flex gap-6 hover:cursor-pointer pb-3'}>
+                                    <Tab className={'border-2 border-transparent px-3 py-1'}>Skills</Tab>
+                                    <Tab className={'border-2 border-transparent px-3 py-1'}>Interests</Tab>
+                                    <Tab className={'border-2 border-transparent px-3 py-1'}>Get in Touch</Tab>
                                 </TabList>
 
                                 <TabPanel>
