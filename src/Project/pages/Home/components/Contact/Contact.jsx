@@ -81,7 +81,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="mt-16 pb-12 lg:mx-32 md:mx-6 mx-3">
+        <section id="contact" className="mt-16 pb-12 xl:mx-32 md:mx-6 mx-3">
             <div className="container mx-auto">
                 <div>
                     <h1 className="text-4xl font-semibold">Contact Me</h1>

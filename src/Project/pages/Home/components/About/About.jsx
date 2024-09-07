@@ -9,7 +9,7 @@ const About = () => {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
-        <section id="about" className="my-16 lg:mx-32 md:mx-6 mx-3">
+        <section id="about" className="my-16 xl:mx-32 md:mx-6 mx-3">
             <div>
                 <h1 className="text-4xl font-semibold">About Me</h1>
             </div>

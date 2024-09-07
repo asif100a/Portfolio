@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <section id='projects' className="my-16 lg:mx-32 md:mx-6 mx-3">
+        <section id='projects' className="my-16 xl:mx-32 md:mx-6 mx-3">
             <div>
                 <h1 className="text-4xl font-semibold">My Projects</h1>
             </div>
@@ -69,10 +69,10 @@ const projects = [
         description: 'A platform designed to connect blood donors with those in need of blood, facilitating easier and quicker donations.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB'],
         features: [
-            'User authentication and profile management',
-            'Real-time search for blood donors',
-            'Interactive maps for locating nearby donors',
-            'Notifications and alerts for urgent requests',
+            'Users can join the platform as donors by registering',
+            'Users can search for donors from the donor search page',
+            'After logging in or registering, users can create donation requests.',
+            'Logged-in users can manage their donation requests by updating or deleting them',
         ],
         showImage: `${bloodDonorImg}`,
         liveDemo: 'https://blood-donator-unity.web.app/',
@@ -83,10 +83,10 @@ const projects = [
         description: 'Assignment Genius is a platform where users can interact with various assignments and they can submit their assignments.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwindcss', 'Firebase', 'React-lottie'],
         features: [
-            'Responsive design',
-            'Users can browse assignments without the need to log in.',
-            'Users can take assignments after logging in or registering.',
-            "Users can give marks on others' submitted assignments but can not mark their own submissions",
+            'Users can browse assignments without the need to log in',
+            'Users can take assignments after logging in or registering',
+            'Logged-in users can update any assignment if needed',
+            "Users can give marks on others' submitted assignments but cannot mark their own submissions",
         ],
         showImage: `${assignmentImg}`,
         liveDemo: 'https://assignment-11-9bd1a.web.app/',
@@ -97,9 +97,9 @@ const projects = [
         description: 'Awesome Tourist Spots is a user-friendly platform designed to help travelers discover and share remarkable tourist destinations worldwide.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'React-countup', 'React-simple-typewrite', 'Swiper'],
         features: [
-            'Responsive design',
+            'Provides information about various tourist spots for easy reference',
             'Users can add a tourist spot after signing in or registering',
-            'Users can see the tourist spots they have created on the "My Lists" page.',
+            'The "All Tourist Spots" page allows users to view tourist spots without signing in',
             'Users can find tourist spots by selecting a country name.',
         ],
         showImage: `${awesomeTouristImg}`,
