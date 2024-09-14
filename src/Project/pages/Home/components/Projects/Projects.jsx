@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="container px-0 py-10 mx-auto">
                 <div className="grid grid-cols-1 gap-8 mt-8 ">
                     {projects.map((project, index) => (
-                        <div key={index} className="overflow-hidden bg-cover rounded-lg h-96 group text-white"
+                        <div key={index} className="overflow-hidden bg-cover rounded-lg lg:h-96 h-auto group text-white"
                             style={{ backgroundImage: `url(${project.showImage})` }}>
                             <div
                                 className="flex flex-col justify-center w-full h-full md:px-24 px-3 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">

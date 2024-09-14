@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { MdWhatsapp } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
@@ -6,79 +6,43 @@ import { Link } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import ContactForm from "./conponents/ContactForm";
 
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+    const form = useRef();
     // const [formData, setFormData] = useState({
-    //     'name': '',
-    //     'email': '',
-    //     'subject': '',
-    //     'message': ''
+    //     name: '',
+    //     email: '',
+    //     subject: '',
+    //     message: '',
     // });
 
-    const handleNameChange = e => {
-        // setFormData({
-        //     ...formData,
-        //     [e.target.name]: e.target.value
-        // });
-        console.log(e.target.value);
-        setName(e.target.value);
-    };
+    // // Set value to the state
+    // const handleChangeMessage = e => {
+    //     setFormData({
+    //         ...formData, [e.target.name]: e.target.value
+    //     });
+    // };
 
-    const handleEmailChange = e => {
-        setEmail(e.target.value);
-        console.log(e.target.value);
-    };
-
-    const handleSubjectChange = e => {
-        console.log(e.target.value);
-        setSubject(e.target.value);
-    };
-
-    const handleMessageChange = e => {
-        console.log(e.target.value);
-        setMessage(e.target.value);
-    };
-
-
-
-    const handleSubmit = (e) => {
+    // Send the message
+    const sendEmail = (e) => {
         e.preventDefault();
-
-        console.log(import.meta.env.VITE_EMAIL_SEND_PRIVATE_KEY)
-
-        // Service id, template id, user id
-        const service_id = `${import.meta.env.VITE_EMAIL_SEND_SERVICE_ID}`;
-        const template_id = `${import.meta.env.VITE_EMAIL_SEND_TEMPLATE_ID}`;
-        const public_key = `${import.meta.env.VITE_EMAIL_SEND_PUBLIC_KEY}`;
-
-        const template = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
-        console.log(template);
-
-        emailjs.send(service_id, template_id, template, public_key)
-            .then(() => {
-                toast.success('Message Sent Successfully!');
-
-                // Reset the form
-                // setFormData({
-                //     'name': '',
-                //     'email': '',
-                //     'subject': '',
-                //     'message': ''
-                // });
-            }).catch(error => {
-                toast.error('Failed to send the message, please try again.');
-                console.error('Error', error.message);
-            });
-    };
+    
+        emailjs
+          .sendForm('service_gsyvmua', 'template_3shoy0h', form.current, {
+            publicKey: 'M8ZdPyX2WzkQORfB8',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              toast.success('Message has sent successfully');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+              toast.error('Failed to sent message');
+            },
+          );
+      };
 
     return (
         <section id="contact" className="mt-16 pb-12 xl:mx-32 md:mx-6 mx-3">
@@ -139,62 +103,10 @@ const Contact = () => {
                     </div>
 
                     <div className="p-4 rounded-lg bg-[#0d1117] text-white img-gradient-border md:p-8">
-                        <form onSubmit={handleSubmit} className="">
-                            <div className="-mx-2 md:items-center md:flex">
-                                <div className="flex-1 px-2 mt-4 md:mt-0">
-                                    <label className="block mb-2 text-sm font-semibold">Your Name</label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Your name"
-                                        value={name}
-                                        onChange={handleNameChange}
-                                        className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                                    />
-                                    {/* {errors.name && <span className="text-orange-600">This field is required</span>} */}
-                                </div>
-                                <div className="flex-1 px-2 mt-4 md:mt-0">
-                                    <label className="block mb-2 text-sm font-semibold">Email address</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email address"
-                                        value={email}
-                                        onChange={handleEmailChange}
-                                        className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                                    />
-                                    {/* {errors.email && <span className="text-orange-600">This field is required</span>} */}
-                                </div>
-                            </div>
-
-                            <div className="mt-4">
-                                <label className="block mb-2 text-sm font-semibold">Subject</label>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Subject"
-                                    value={subject}
-                                    onChange={handleSubjectChange}
-                                    className="block w-full px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                                />
-                                {/* {errors.subject && <span className="text-orange-600">This field is required</span>} */}
-                            </div>
-
-                            <div className="w-full mt-4">
-                                <label className="block mb-2 text-sm font-semibold">Message</label>
-                                <textarea
-                                    name="message"
-                                    placeholder="Message"
-                                    value={message}
-                                    onChange={handleMessageChange}
-                                    className="block w-full h-32 px-5 py-2.5 mt-2 text-white placeholder-gray-400 bg-[#0d1117] border border-gray-200 rounded-none md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                                ></textarea>
-                                {/* {errors.message && <span className="text-orange-600">This field is required</span>} */}
-                            </div>
-
-                            <input type="submit" value={'Send message'} className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-none hover:bg-green-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
-                            />
-                        </form>
+                        <ContactForm
+                            form={form}
+                            sendEmail={sendEmail}
+                        />
                     </div>
                 </div>
             </div>

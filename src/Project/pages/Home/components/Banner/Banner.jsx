@@ -1,4 +1,4 @@
-import asifImg from "../../../../../assets/asif.png";
+// import asifImg from "../../../../../assets/asif.png";
 import DownloadResume from "../downloadResume/DownloadResume";
 import "./banner.css";
 
@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="w-auto h-screen bg-black bg-opacity-40">
                 <div className="flex md:flex-row flex-col justify-around items-start lg:pt-32 pt-10">
                     <div className="md:block hidden mt-3">
-                        <img src={asifImg} alt="N.M. Asif Sheikh" className="lg:h-80 md:h-48 w-auto img-gradient-border" />
+                        {/* <img src={asifImg} alt="N.M. Asif Sheikh" className="lg:h-80 md:h-48 w-auto img-gradient-border" /> */}
                     </div>
 
                     <div className="text-white px-3">
