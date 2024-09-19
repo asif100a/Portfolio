@@ -24,8 +24,8 @@ const About = () => {
                                 <img src={roundImg} alt="N.M. Asif Sheikh" className="h-40" />
                             </div>
                             <div className="my-6 space-y-3">
-                                <h3 className="text-lg font-medium mb-2">Hi,</h3>
-                                <p className="lg:w-[24rem]">{"I'm"} N.M. Asif Sheikh is a passionate front-end web developer who loves crafting beautiful, and functional websites. With a strong foundation in React, I bring user-centric designs to life.</p>
+                                <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
+                                <p className="xl:w-[48rem] lg:w-[32rem] md:w-[24rem] w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
                             </div>
 
                             <div>

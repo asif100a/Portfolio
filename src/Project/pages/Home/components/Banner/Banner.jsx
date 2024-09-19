@@ -30,10 +30,7 @@ const Banner = () => {
                         <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold mb-3">N.M. Asif Sheikh</h1>
                         <h2 className="lg:text-3xl md:text-2xl font-semibold">Front-End Developer & UI/UX Enthusiast</h2>
 
-                        <div className="lg:mt-10 md:mt-5 mt-6">
-                            <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                            <p className="xl:w-[48rem] lg:w-[32rem] md:w-[24rem] w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
-                        </div>
+                        {/*  */}
 
                         <div className="lg:mt-10 md:mt-5 mt-3">
                             <DownloadResume />
