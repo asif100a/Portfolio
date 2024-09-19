@@ -1,5 +1,5 @@
 .banner-background{
-    background-image: url(../../../../../assets/1658006754892.jpeg);
+    background-image: url(../../../../../assets/outer-space.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,4 +13,17 @@
 
 .giphy-embed{
     pointer-events: none;
+}
+
+.rotate-animation{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
