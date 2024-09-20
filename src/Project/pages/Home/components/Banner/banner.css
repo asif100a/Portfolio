@@ -1,4 +1,6 @@
-.banner-background{
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+.banner-background {
     background-image: url(../../../../../assets/outer-space.jpg);
     background-size: cover;
     background-position: center;
@@ -6,24 +8,38 @@
     overflow: hidden;
 }
 
-.img-gradient-border{
+.img-gradient-border {
     border: 8px solid;
-    border-image: linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9)) 1;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
 }
 
-.giphy-embed{
+.gradient-text {
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.jacques-francois-shadow {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+}
+
+.giphy-embed {
     pointer-events: none;
 }
 
-.rotate-animation{
+.rotate-animation {
     animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }

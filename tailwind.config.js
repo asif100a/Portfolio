@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'text-lora': '"Lora", serif',
+      }
+    },
     listStyleType: {
       disc: 'disc',
       decimal: 'decimal',

@@ -67,7 +67,7 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <Link to="contact" smooth={true} duration={600} className="btn btn-sm rounded-none bg-white hover:bg-white shadow-none border-none bg-gradient-to-r from-[#FF0000] to-[#00FF00] text-white hover:bg-gradient-to-r hover:from-[#FF00009A] hover:to-[#00FF009A]">Contact me</Link>
+                <Link to="contact" smooth={true} duration={600} className="btn btn-sm rounded-none bg-white hover:bg-white shadow-none border-none bg-gradient-to-r from-[#fb7185] to-[#eea75b] text-white hover:bg-gradient-to-r hover:from-[#fb7185] hover:to-[#eea75b]">Contact me</Link>
             </div>
         </div>
     );
