@@ -4,12 +4,12 @@
 
 .gradient-border:hover{
     border-bottom: 2px solid;
-    border-image: linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
     border-image-slice: 1;
 }
 
 .gradient-horizontal{
     border-top: 2px solid;
-    border-image: linear-gradient(90deg, rgba(255, 00, 00, 0.9), rgba(00, 255, 00, 0.9));
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
     border-image-slice: 1;
 }

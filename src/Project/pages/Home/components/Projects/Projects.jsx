@@ -47,11 +47,11 @@ const Projects = () => {
 
                                 <div className='w-fit mx-auto flex md:gap-32 gap-12 lg:mt-0 mt-6'>
                                     <Link to={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                                            <button className='btn btn-sm bg-[#02e71e] hover:bg-[#26b637] text-white font-bold'>Live Demo</button>
+                                            <button className='btn btn-sm border-none outline-none bg-[#fb7185] hover:bg-[#f8445f] text-white font-bold'>Live Demo</button>
                                     </Link>
                                     
                                     <Link to={project.sourceCode} target="_blank" rel="noopener noreferrer">
-                                            <button className="btn btn-sm bg-[#e80202] hover:bg-red-700 text-white font-bold">Source Code</button>
+                                            <button className="btn btn-sm border-none outline-none bg-[#eea75b] hover:bg-[#f59937] text-white font-bold">Source Code</button>
                                     </Link>
                                 </div>
                             </div>

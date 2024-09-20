@@ -28,10 +28,17 @@ const Banner = () => {
         },
     ];
 
-    const navItems = <>
+    const navItems1 = <>
         {
-            items.map((item, i) => (
-                <li key={i} className="hover:cursor-pointer border"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+            items.slice(0, 3).map((item, i) => (
+                <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+            ))
+        }
+    </>;
+    const navItems2 = <>
+        {
+            items.slice(3).map((item, i) => (
+                <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
             ))
         }
     </>;
@@ -40,7 +47,7 @@ const Banner = () => {
         <section className="w-auto h-screen banner-background">
             <div className="w-auto h-full bg-black bg-opacity-40">
                 {/* Icon and Welcome */}
-                <div className="flex items-start gap-16 py-12 px-36">
+                <div className="flex items-start justify-center gap-10 py-12 px-36">
                     <SlSettings className="w-20 h-20 text-[#fb7185] rounded-full rotate-animation" />
                     <div className="text-7xl font-bold flex justify-start gap-6">
                         <h1 className="gradient-text font-text-lora">Welcome to</h1>
@@ -69,14 +76,16 @@ const Banner = () => {
                     </div>
 
                     {/* Developer Showcase */}
-                    <div className="text-white px-3">
-                        <ul className="grid grid-cols-3 items-center gap-3">
-                            {navItems}
+                    <div className="text-white px-3 flex flex-col gap-6 items-center">
+                        <ul className="flex items-center gap-6">
+                            {navItems1}
                         </ul>
 
-                        {/*  */}
+                        <ul className="flex items-center gap-6">
+                            {navItems2}
+                        </ul>
 
-                        <div className="lg:mt-10 md:mt-5 mt-3">
+                        <div className="lg:mt-10 md:mt-6 mt-3">
                             <DownloadResume />
                         </div>
                     </div>

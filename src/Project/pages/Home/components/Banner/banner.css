@@ -8,9 +8,21 @@
     overflow: hidden;
 }
 
-.img-gradient-border {
-    border: 8px solid;
+.gradient-link-border {
+    border: 2px solid;
     border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
+    padding: 4px 8px;
+}
+
+.gradient-link-border:hover {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
+    padding: 4px 8px;
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .gradient-text {
