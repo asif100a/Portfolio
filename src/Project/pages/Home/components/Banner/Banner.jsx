@@ -66,7 +66,7 @@ const Banner = () => {
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 ">
                     {/* Code Shower Laptop */}
                     <div className="block hover:cursor-not-allowed relative w-fit h-fit">
-                        <img src={codingLaptop} alt="N.M. Asif Sheikh" className="h-56 md:h-56 xl:h-80 w-auto" />
+                        <img src={codingLaptop} alt="N.M. Asif Sheikh" className="h-56 md:h-56 xl:h-80 w-[318px] md:w-auto mx-auto" />
 
                         {/* gif */}
                         <div className="absolute top-[26px] md:top-[26px] xl:top-[38px] left-[58px] md:left-[60px] xl:left-[86px] flex gap-0">
