@@ -61,11 +61,7 @@ const Navber = () => {
                     <p className="sm:text-3xl text-2xl font-semibold gradient-text flex justify-center items-center">Front-End Developer</p>
                 </div>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {navItems}
-                </ul>
-            </div>
+            
             <div className="navbar-end hidden lg:flex">
                 <Link to="contact" smooth={true} duration={600} className="btn btn-sm rounded-none bg-white hover:bg-white shadow-none border-none bg-gradient-to-r from-[#fb7185] to-[#eea75b] text-white hover:bg-gradient-to-r hover:from-[#fb7185] hover:to-[#eea75b]">Contact me</Link>
             </div>
