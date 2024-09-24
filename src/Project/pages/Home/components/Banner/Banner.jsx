@@ -65,19 +65,19 @@ const Banner = () => {
 
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 ">
                     {/* Code Shower Laptop */}
-                    <div className="md:block hidden hover:cursor-not-allowed relative w-fit h-fit">
-                        <img src={codingLaptop} alt="N.M. Asif Sheikh" className="md:h-56 xl:h-80 w-auto" />
+                    <div className="block hover:cursor-not-allowed relative w-fit h-fit">
+                        <img src={codingLaptop} alt="N.M. Asif Sheikh" className="h-56 md:h-56 xl:h-80 w-auto" />
 
                         {/* gif */}
-                        <div className="absolute md:top-[26px] xl:top-[38px] md:left-[60px] xl:left-[86px] flex gap-0">
-                            <div className="bg-[#282828] md:w-[31px] xl:w-[46px] md:h-[137px] xl:h-[195px]"></div>
+                        <div className="absolute top-[26px] md:top-[26px] xl:top-[38px] left-[58px] md:left-[60px] xl:left-[86px] flex gap-0">
+                            <div className="bg-[#282828] w-[26px] md:w-[31px] xl:w-[46px] h-[137px] md:h-[137px] xl:h-[195px]"></div>
                             <iframe
                                 src="https://giphy.com/embed/xT9IgzoKnwFNmISR8I"
                                 frameBorder="0"
-                                className="giphy-embed md:w-[156px] xl:w-[220px] md:h-[137px] xl:h-[195px]"
+                                className="giphy-embed w-[156px] md:w-[156px] xl:w-[220px] h-[137px] md:h-[137px] xl:h-[195px]"
                                 allowFullScreen
                             ></iframe>
-                            <div className="bg-[#282828] md:w-[31px] xl:w-[46px] md:h-[137px] xl:h-[195px]"></div>
+                            <div className="bg-[#282828] w-[26px] md:w-[31px] xl:w-[46px] h-[137px] md:h-[137px] xl:h-[195px]"></div>
                         </div>
                     </div>
 
