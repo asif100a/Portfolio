@@ -3,6 +3,7 @@ import codingLaptop from "../../../../../assets/Coding-laptop.png";
 import DownloadResume from "../downloadResume/DownloadResume";
 import "./banner.css";
 import { Link } from "react-scroll";
+import Marquee from "./component/Marquee";
 
 const Banner = () => {
     const items = [
@@ -95,6 +96,10 @@ const Banner = () => {
                             <DownloadResume />
                         </div>
                     </div>
+                </div>
+                {/* Technologies Logo */}
+                <div className="px-3 md:px-32">
+                    <Marquee />
                 </div>
             </div>
         </section>
