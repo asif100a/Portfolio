@@ -24,6 +24,15 @@
     }
 }
 
-@media screen {
-    
+@media (min-width: 300px) and (max-width: 480px) {
+    .marquee-content img{
+        height: 60px;
+        width: auto;
+    }
+}
+@media (min-width: 481px) and (max-width: 996px) {
+    .marquee-content img{
+        height: 66px;
+        width: auto;
+    }
 }

@@ -15,17 +15,20 @@ const About = () => {
                     <h1 className="text-4xl font-semibold">About Me</h1>
                 </div>
                 <div className="my-6">
-                    <div className="flex lg:flex-row flex-col lg:gap-32 gap-6">
+                    <div className="flex lg:flex-row flex-col lg:gap-12 gap-6">
+                        {/* Development Image */}
                         <div>
                             <img src={web_developmentImg} alt="" className="lg:pt-12 pt-2 w-[430px] h-[230px] lg:w-auto lg:h-auto" />
                         </div>
+                        {/* About Me content */}
                         <div>
                             <div>
+                                {/* My image */}
                                 <img src={roundImg} alt="N.M. Asif Sheikh" className="h-40" />
                             </div>
                             <div className="my-6 space-y-3">
                                 <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                                <p className="xl:w-[48rem] lg:w-[32rem] md:w-[24rem] w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
+                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
                             </div>
 
                             <div>

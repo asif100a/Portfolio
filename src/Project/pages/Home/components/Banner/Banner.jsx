@@ -45,7 +45,7 @@ const Banner = () => {
     </>;
 
     return (
-        <section className="w-auto h-screen banner-background">
+        <section className="w-auto h-full banner-background">
             <div className="w-auto h-full bg-black bg-opacity-40">
                 {/* Icon and Welcome */}
                 <div className="flex items-start justify-center gap-6 lg:gap-10 py-0 pt-8 lg:py-12 px-3 md:px-6 xl:px-32">
@@ -98,7 +98,7 @@ const Banner = () => {
                     </div>
                 </div>
                 {/* Technologies Logo */}
-                <div className="px-3 md:px-32">
+                <div className="px-3 md:px-6 xl:px-32">
                     <Marquee />
                 </div>
             </div>
