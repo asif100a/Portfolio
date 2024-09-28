@@ -10,19 +10,6 @@ import ContactForm from "./conponents/ContactForm";
 
 const Contact = () => {
     const form = useRef();
-    // const [formData, setFormData] = useState({
-    //     name: '',
-    //     email: '',
-    //     subject: '',
-    //     message: '',
-    // });
-
-    // // Set value to the state
-    // const handleChangeMessage = e => {
-    //     setFormData({
-    //         ...formData, [e.target.name]: e.target.value
-    //     });
-    // };
 
     // Send the message
     const sendEmail = (e) => {
@@ -68,7 +55,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Email</h2>
                             <p className="mt-2 text-sm">Contact me vai email.</p>
-                            <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">nmasifsheikh2003@gmail.com</Link>
+                            <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">nmasifsheikh2003@gmail.com</Link>
                         </div>
 
                         <div>
@@ -78,7 +65,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Linked in</h2>
                             <p className="mt-2 text-sm">Contact and explore my linked in profile.</p>
-                            <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">Linked in profile</Link>
+                            <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">Linked in profile</Link>
                         </div>
 
                         <div>
@@ -88,7 +75,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Github</h2>
                             <p className="mt-2 text-sm">Check my github account and contact me.</p>
-                            <Link to="https://github.com/asif100a" target="_blank" className="mt-2 text-sm text-green-600 dark:text-blue-400">Github account</Link>
+                            <Link to="https://github.com/asif100a" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">Github account</Link>
                         </div>
 
                         <div>
@@ -98,7 +85,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">{"What's"} app</h2>
                             <p className="mt-2 text-sm">Direct call or {"What's"} app:</p>
-                            <span className="mt-2 text-sm text-green-600">+88 01608-898811</span>
+                            <span className="mt-2 text-sm text-[#eea75b]">+88 01608-898811</span>
                         </div>
                     </div>
 

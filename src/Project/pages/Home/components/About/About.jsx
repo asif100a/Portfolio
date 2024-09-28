@@ -28,7 +28,7 @@ const About = () => {
                             </div>
                             <div className="my-6 space-y-3">
                                 <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">I am N.M. Asif Sheikh, <i>Front-End Developer</i> with experience in <i>HTML</i>, <i>CSS</i>, <i>JavaScript,</i> and frameworks like <i>React</i>, and <i>TailwindCSS</i> to create the best user interface design, flexible, version control system management, and user experience-based website. I am passionate about creating visually stunning and highly functional websites. I transform ideas into seamless digital experiences.</p>
+                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">{"I'm"} N.M. Asif Sheikh, is a Junior Software Developer skilled in <i>React</i>, <i>Next.js</i>, <i>JavaScript</i>, <i>TypeScript</i>, <i>HTML</i>, <i>CSS</i>, and <i>TailwindCSS</i>, with hands-on experience in back-end technologies like <i>Node.js</i>, <i>Express.js</i>, and <i>MongoDB</i>. I craft dynamic, user-centric websites with stunning visuals and seamless functionality. Driven by a passion for delivering exceptional user experiences, I bring ideas to life by transforming them into polished, interactive digital solutions.</p>
                             </div>
 
                             <div>
@@ -54,7 +54,7 @@ const About = () => {
                                         </div>
                                     </TabPanel>
                                     <TabPanel>
-                                        <p className="w-full sm:w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:your-email@example.com" className="text-green-600 hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/your-profile" className="text-green-600 hover:underline">LinkedIn</a>.</p>
+                                        <p className="w-full sm:w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:your-email@example.com" className="text-[#eea75b] hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/your-profile" className="text-[#eea75b] hover:underline">LinkedIn</a>.</p>
                                         <p className="mt-2 pb-3">{"Let's"} create something amazing together!</p>
                                     </TabPanel>
                                 </Tabs>
