@@ -12,7 +12,7 @@ import FirebaseLogo from '../../../../../../assets/Firebase-Logo.png';
 
 const Marquee = () => {
     return (
-        <div className='marquee-container mt-12'>
+        <div className='marquee-container mt-6 md:mt-12'>
             <div className='marquee-content'>
                 <img src={ReactLogo} alt="React" />
                 <img src={NextLogo} alt="NextJS" />

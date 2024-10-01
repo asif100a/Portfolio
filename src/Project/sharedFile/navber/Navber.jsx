@@ -36,7 +36,7 @@ const Navber = () => {
 
     return (
         <header className="w-full h-full bg-[#0d1117] px-0 md:px-6 xl:px-28">
-            <div className="navbar gradient-border-nav py-1 md:py-2 px-0 md:px-8">
+            <div className="navbar min-h-4 md:min-h-6 lg:min-h-[4rem] items-center gradient-border-nav py-0 md:py-1 lg:py-2 px-0 md:px-8">
                 <div className="lg:navbar-start flex-row-reverse lg:flex-row lg:w-1/2 w-full">
                     <nav className="dropdown flex flex-row-reverse justify-between lg:inline-block lg:w-auto w-full">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
