@@ -55,7 +55,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Email</h2>
                             <p className="mt-2 text-sm">Contact me vai email.</p>
-                            <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-[#eea75b]">nmasifsheikh2003@gmail.com</Link>
+                            <Link to="mailto:nmasifsheikh2003@gmail.com" target="_blank" className="mt-2 text-sm text-[#eea75b]">nmasifsheikh2003@gmail.com</Link>
                         </div>
 
                         <div>
@@ -85,7 +85,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">{"What's"} app</h2>
                             <p className="mt-2 text-sm">Direct call or {"What's"} app:</p>
-                            <span className="mt-2 text-sm text-[#eea75b]">+88 01608-898811</span>
+                            <Link to={'https://wa.link/l3yb8x'} className="mt-2 text-sm text-[#eea75b]">+88 01608-898811</Link>
                         </div>
                     </div>
 
