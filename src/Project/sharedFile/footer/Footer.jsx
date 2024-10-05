@@ -24,10 +24,10 @@ const Footer = () => {
                     <Link to="https://github.com/asif100a" target="_blank">
                         <VscGithub className="w-7 h-7 text-purple-500" />
                     </Link>
-                    <Link to="https://www.facebook.com/?_rdc=2&_rdr" target="_blank">
+                    <Link to="https://www.facebook.com/profile.php?id=100070024600518" target="_blank">
                         <LiaFacebook className="w-9 h-9 text-indigo-500" />
                     </Link>
-                    <Link>
+                    <Link to="https://wa.link/l3yb8x" target="_blank">
                         <MdWhatsapp className="w-8 h-8 text-green-500" />
                     </Link>
                 </div>

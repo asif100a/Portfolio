@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { MdWhatsapp } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
@@ -55,7 +55,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Email</h2>
                             <p className="mt-2 text-sm">Contact me vai email.</p>
-                            <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">nmasifsheikh2003@gmail.com</Link>
+                            <Link to="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" className="mt-2 text-sm text-[#eea75b]">nmasifsheikh2003@gmail.com</Link>
                         </div>
 
                         <div>
@@ -65,21 +65,21 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Linked in</h2>
                             <p className="mt-2 text-sm">Contact and explore my linked in profile.</p>
-                            <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">Linked in profile</Link>
+                            <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-[#eea75b]">Linked in profile</Link>
                         </div>
 
                         <div>
-                            <span className="inline-block p-2 text-blue-500 rounded-full gradient-background dark:bg-gray-800">
+                            <span className="inline-block p-2 text-[#eea75b] rounded-full gradient-background dark:bg-gray-800">
                                 <VscGithub className="w-7 h-7 text-white" />
                             </span>
 
                             <h2 className="mt-4 text-base font-medium">Github</h2>
                             <p className="mt-2 text-sm">Check my github account and contact me.</p>
-                            <Link to="https://github.com/asif100a" target="_blank" className="mt-2 text-sm text-[#eea75b] dark:text-blue-400">Github account</Link>
+                            <Link to="https://github.com/asif100a" target="_blank" className="mt-2 text-sm text-[#eea75b]">Github account</Link>
                         </div>
 
                         <div>
-                            <span className="inline-block p-2 text-blue-500 rounded-full gradient-background dark:bg-gray-800">
+                            <span className="inline-block p-2 text-[#eea75b] rounded-full gradient-background dark:bg-gray-800">
                                 <MdWhatsapp className="w-8 h-8 text-white" />
                             </span>
 
