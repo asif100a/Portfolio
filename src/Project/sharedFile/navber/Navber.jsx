@@ -49,7 +49,7 @@ const Navber = () => {
                             {navItems}
                         </ul>
 
-                        <p className="sm:text-3xl text-xl font-semibold gradient-text flex justify-center items-center ml-4 lg:ml-0">Junior Software Developer</p>
+                        <p className="sm:text-3xl text-xl font-semibold gradient-text flex justify-center items-center ml-4 lg:ml-0">Front End Developer</p>
                     </nav>
                 </div>
 

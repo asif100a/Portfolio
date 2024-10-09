@@ -89,7 +89,7 @@ const Banner = () => {
                         </ul>
 
                         <ul className="flex items-center gap-3 lg:gap-4 xl:gap-6">
-                            {navItems2}
+                            {navItems2} 
                         </ul>
 
                         <div className="lg:mt-6 xl:mt-8 md:mt-4 mt-3">
