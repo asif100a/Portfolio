@@ -53,7 +53,7 @@ const Banner = () => {
                     <div className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-bold md:flex md:flex-row justify-start gap-6">
                         <h1 className="gradient-text font-text-lora">Welcome to</h1>
                         <div className="hidden lg:block">
-                            <h1 className="jacques-francois-shadow gradient-text">N.M. Asif Sheikh</h1>
+                            <h1 className="jacques-francois-shadow gradient-text appear-disappear">N.M. Asif Sheikh</h1>
                             <p className="text-sm md:text-base lg:text-xl xl:text-3xl font-semibold font-text-lora bg-gradient-to-r from-rose-400 to-orange-300 px-4 py-1 w-fit rounded-full mt-1">Front-End Developer & UI/UX Enthusiast</p>
                         </div>
                     </div>

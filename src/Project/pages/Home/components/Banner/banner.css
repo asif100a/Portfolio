@@ -46,6 +46,10 @@
     animation: rotate 2.4s linear infinite;
 }
 
+.appear-disappear{
+    animation: app-disapp 3s linear infinite;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -53,5 +57,20 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes app-disapp {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 50;
+    }
+    75%{
+        opacity: 75;
+    }
+    100%{
+        opacity: 100;
     }
 }
