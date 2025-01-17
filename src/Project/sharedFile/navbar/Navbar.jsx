@@ -1,35 +1,13 @@
 import { Link } from "react-scroll";
-import "./navber.css";
+import "./navbar.css";
 import { CgMenuRound } from "react-icons/cg";
+import { items } from "../../../utils/utils";
 
-const Navber = () => {
-    const items = [
-        {
-            path: 'about',
-            title: 'About'
-        },
-        {
-            path: 'education',
-            title: 'Education'
-        },
-        {
-            path: 'skills',
-            title: 'Skills'
-        },
-        {
-            path: 'projects',
-            title: 'Projects'
-        },
-        {
-            path: 'contact',
-            title: 'Contact'
-        },
-    ];
-
+const Navbar = () => {
     const navItems = <>
         {
-            items.map((item, i) => (
-                <li key={i}><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+            items.map((item) => (
+                <li key={item?.title}><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
             ))
         }
     </>;
@@ -49,7 +27,7 @@ const Navber = () => {
                             {navItems}
                         </ul>
 
-                        <p className="sm:text-3xl text-xl font-semibold gradient-text flex justify-center items-center ml-4 lg:ml-0">Front End Developer</p>
+                        <p className="sm:text-3xl text-xl font-semibold gradient-text flex justify-center items-center ml-4 lg:ml-0">Fullstack Engineer</p>
                     </nav>
                 </div>
 
@@ -63,4 +41,4 @@ const Navber = () => {
     );
 };
 
-export default Navber;
+export default Navbar;

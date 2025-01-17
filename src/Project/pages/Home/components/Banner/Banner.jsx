@@ -4,41 +4,19 @@ import DownloadResume from "../downloadResume/DownloadResume";
 import "./banner.css";
 import { Link } from "react-scroll";
 import Marquee from "./component/Marquee";
+import { items } from "../../../../../utils/utils";
 
 const Banner = () => {
-    const items = [
-        {
-            path: 'about',
-            title: 'About'
-        },
-        {
-            path: 'education',
-            title: 'Education'
-        },
-        {
-            path: 'skills',
-            title: 'Skills'
-        },
-        {
-            path: 'projects',
-            title: 'Projects'
-        },
-        {
-            path: 'contact',
-            title: 'Contact'
-        },
-    ];
-
     const navItems1 = <>
         {
-            items.slice(0, 3).map((item, i) => (
+            items.slice(0, 4).map((item, i) => (
                 <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora lg:text-base xl:text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
             ))
         }
     </>;
     const navItems2 = <>
         {
-            items.slice(3).map((item, i) => (
+            items.slice(4).map((item, i) => (
                 <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora lg:text-base xl:text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
             ))
         }
@@ -54,7 +32,7 @@ const Banner = () => {
                         <h1 className="gradient-text font-text-lora">Welcome to</h1>
                         <div className="hidden lg:block">
                             <h1 className="jacques-francois-shadow gradient-text appear-disappear">N.M. Asif Sheikh</h1>
-                            <p className="text-sm md:text-base lg:text-xl xl:text-3xl font-semibold font-text-lora bg-gradient-to-r from-rose-400 to-orange-300 px-4 py-1 w-fit rounded-full mt-1">Front-End Developer & UI/UX Enthusiast</p>
+                            <p className="text-sm md:text-base lg:text-xl xl:text-3xl font-semibold font-text-lora bg-gradient-to-r from-rose-400 to-orange-300 px-4 py-1 w-fit rounded-full mt-1">Fullstack Engineer & UI/UX Enthusiast</p>
                         </div>
                     </div>
                 </div>
