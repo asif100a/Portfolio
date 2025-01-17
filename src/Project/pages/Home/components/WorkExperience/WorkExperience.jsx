@@ -10,7 +10,7 @@ const WorkExperience = () => {
             </div>
 
             <div className="lg:mt-12 mt-6 space-y-6">
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <p><b>Company Name:</b> NextVision (Internship)</p>
                     <p><b>Position Title:</b> Fullstack Engineer Intern</p>
                     <p><b>Duration:</b> 10th October, 2024 – Present</p>
@@ -27,21 +27,21 @@ const WorkExperience = () => {
                 </ul>
             </div>
 
-            <div className='flex flex-col lg:flex-row gap-6 mt-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-6 mt-6'>
                 <img
                     src={projectPhoto1}
                     alt="Intern-project-1"
-                    className='w-72 h-40 rounded-md'
+                    className='w-full lg:w-72 h-auto lg:h-40 rounded-md'
                 />
                 <img
                     src={projectPhoto2}
                     alt="Intern-project-2a"
-                    className='w-72 h-40 rounded-md'
+                    className='w-full lg:w-72 h-auto lg:h-40 rounded-md'
                 />
                 <img
                     src={projectPhoto3}
                     alt="Intern-project-2b"
-                    className='w-72 h-40 rounded-md'
+                    className='w-full lg:w-72 h-auto lg:h-40 rounded-md'
                 />
             </div>
         </section>
