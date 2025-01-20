@@ -28,7 +28,7 @@ const About = () => {
                             </div>
                             <div className="my-6 space-y-3">
                                 <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">{"I'm"} N.M. Asif Sheikh, is a Junior Software Developer skilled in <i>React</i>, <i>Next.js</i>, <i>JavaScript</i>, <i>TypeScript</i>, <i>HTML</i>, <i>CSS</i>, and <i>TailwindCSS</i>, with hands-on experience in back-end technologies like <i>Node.js</i>, <i>Express.js</i>, and <i>MongoDB</i>. I craft dynamic, user-centric websites with stunning visuals and seamless functionality. Driven by a passion for delivering exceptional user experiences, I bring ideas to life by transforming them into polished, interactive digital solutions.</p>
+                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">{"I'm"} N.M. Asif Sheikh is a Junior Fullstack Engineer skilled in Front-End technologies <i>React</i>, <i>Next.js</i>, <i>JavaScript</i>, <i>TypeScript</i>, <i>HTML</i>, <i>CSS</i>, <i>TailwindCSS</i>, Back-End technologies <i>Node.js</i>, <i>Express.js</i>, and <i>MongoDB</i>. Currently, I am working at NxtVis company as a Fullstack Engineer Intern. I have worked on several projects like AI Garden as a front-end contributor and Smart Edu as a full-stack contributor. I have Designed an AI chatbot interface, and custom theme, Made an academic web app, and Implemented a payment system with SSLcommerz.</p>
                             </div>
 
                             <div>
