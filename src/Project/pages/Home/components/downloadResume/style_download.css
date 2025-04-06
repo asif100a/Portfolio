@@ -1,0 +1,11 @@
+.download-btn-style{
+    background-color: inherit;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
+    color: #fff;
+}
+
+.download-btn-style:hover{
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    color: #fff;
+}

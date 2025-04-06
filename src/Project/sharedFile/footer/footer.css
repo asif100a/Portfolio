@@ -1,0 +1,15 @@
+.gradient-border{
+    border-bottom: 2px solid transparent;
+}
+
+.gradient-border:hover{
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
+    border-image-slice: 1;
+}
+
+.gradient-horizontal{
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
+    border-image-slice: 1;
+}

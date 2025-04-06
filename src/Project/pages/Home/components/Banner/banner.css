@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+.banner-background {
+    background-image: url(../../../../../assets/outer-space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.gradient-link-border {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
+    padding: 4px 8px;
+}
+
+.gradient-link-border:hover {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b) 1;
+    padding: 4px 8px;
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.jacques-francois-shadow {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+}
+
+.giphy-embed {
+    pointer-events: none;
+}
+
+.rotate-animation {
+    animation: rotate 2.4s linear infinite;
+}
+
+.appear-disappear{
+    animation: app-disapp 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes app-disapp {
+    0%{
+        opacity: 100;
+    }
+    25%{
+        opacity: 50;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+    }
+}
