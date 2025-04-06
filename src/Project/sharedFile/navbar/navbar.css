@@ -1,0 +1,50 @@
+.menu li>*:not(ul, .menu-title, details, .btn):active,
+.menu li>*:not(ul, .menu-title, details, .btn).active,
+.menu li>details>summary:active {
+    background-color: #0d1117;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
+    border-image-slice: 1;
+    color: orange;
+    font-weight: 600;
+}
+
+.menu li>*:not(ul, .menu-title, details, .btn):hover {
+    background-color: #0d1117;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fb7185, #eea75b);
+    border-image-slice: 1;
+}
+
+.menu li>*:not(ul, .menu-title, details, .btn) {
+    background-color: #0d1117;
+    border: 2px solid transparent;
+    color: white;
+    height: fit-content;
+    padding: 4px 8px;
+    margin: 0px 4px;
+    border-radius: 0px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.gradient-border-nav {
+    border: 2px solid transparent;
+    background: linear-gradient(#0d1117, #0d1117) padding-box,
+        linear-gradient(to right, #fb7185, #eea75b) border-box;
+    border-radius: 64px;
+}
+
+.gradient-btn {
+    border: 2px solid transparent;
+    background: linear-gradient(#0d1117, #0d1117) padding-box,
+        linear-gradient(to right, #fb7185, #eea75b) border-box;
+    border-radius: 8px;
+    padding: 0px 6px;
+}
