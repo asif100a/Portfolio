@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useInterSectionObserver } from "../../../hooks/useIntersectionObserver";
->>>>>>> master
 import Footer from "../../sharedFile/footer/Footer";
 import Navbar from "../../sharedFile/navbar/Navbar";
 import About from "./components/About/About";
