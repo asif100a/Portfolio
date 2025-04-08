@@ -28,7 +28,8 @@ const About = () => {
                             </div>
                             <div className="my-6 space-y-3">
                                 <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">{"I'm"} N.M. Asif Sheikh is a Junior Fullstack Engineer skilled in Front-End technologies <i>React</i>, <i>Next.js</i>, <i>JavaScript</i>, <i>TypeScript</i>, <i>HTML</i>, <i>CSS</i>, <i>TailwindCSS</i>, Back-End technologies <i>Node.js</i>, <i>Express.js</i>, and <i>MongoDB</i>. Currently, I am working at NxtVis company as a Fullstack Engineer Intern. I have worked on several projects like AI Garden as a front-end contributor and Smart Edu as a full-stack contributor. I have Designed an AI chatbot interface, and custom theme, Made an academic web app, and Implemented a payment system with SSLcommerz.</p>
+                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">Hi, I’m N.M. Asif Sheikh, a passionate Fullstack Engineer with real-world experience in building scalable and user-friendly web applications. Currently, I’m working as a Fullstack Engineer Intern at NxtVis, where I’ve been deeply involved in developing production-ready applications from the ground up.</p>
+                                <p>I specialize in both front-end and back-end technologies including React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB. During my internship, I’ve worked on various impactful projects.</p>
                             </div>
 
                             <div>
@@ -42,7 +43,8 @@ const About = () => {
                                     <TabPanel>
                                         <ul className="list-disc ml-12">
                                             <li>HTML, CSS, JavaScript</li>
-                                            <li>React</li>
+                                            <li>React, Next.js, TypeScript, Tailwind CSS</li>
+                                            <li>Node.js, Express.js, MongoDB</li>
                                             <li>Responsive Design</li>
                                             <li>Version Control (Git)</li>
                                             <li>UI/UX Principles</li>
@@ -54,7 +56,7 @@ const About = () => {
                                         </div>
                                     </TabPanel>
                                     <TabPanel>
-                                        <p className="w-full sm:w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:your-email@example.com" className="text-[#eea75b] hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/your-profile" className="text-[#eea75b] hover:underline">LinkedIn</a>.</p>
+                                        <p className="w-full sm:w-[24rem]">{"I'm"} always open to new opportunities and collaborations. Feel free to <a href="mailto:nmasifsheikh2003@gmail.com" className="text-[#eea75b] hover:underline">contact me</a> or connect with me on <a href="https://www.linkedin.com/in/nm-asif-sheikh" target="_blank" className="text-[#eea75b] hover:underline">LinkedIn</a>.</p>
                                         <p className="mt-2 pb-3">{"Let's"} create something amazing together!</p>
                                     </TabPanel>
                                 </Tabs>

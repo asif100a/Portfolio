@@ -62,13 +62,16 @@
 
 @keyframes app-disapp {
     0%{
-        opacity: 0;
+        opacity: 100;
     }
-    50%{
+    25%{
         opacity: 50;
     }
+    50%{
+        opacity: 0;
+    }
     75%{
-        opacity: 75;
+        opacity: 50;
     }
     100%{
         opacity: 100;

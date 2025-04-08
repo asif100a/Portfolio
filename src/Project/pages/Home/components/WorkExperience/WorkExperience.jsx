@@ -18,12 +18,11 @@ const WorkExperience = () => {
                 </div>
 
                 <h3 className="text-2xl font-semibold">Responsibilities:</h3>
-                <ul className="mt-4 list-circle ml-12">
-                    <li>Designed AI chatbot interface, and custom theme(upload from devices) for the chatbot page.</li>
-                    <li>Made an academic web app and worked on both frontend and backend tasks.</li>
-                    <li>Implemented payment system with SSLcommerz.</li>
-                    <li>Developed organized, and maintained efficient, reusable code.</li>
-                    <li>Troubleshooted and debugged issues in both frontend and backend environments.</li>
+                <ul className="mt-4 w-full lg:w-2/3 xl:w-1/2 list-circle ml-12">
+                    <li>An AI SaaS Dashboard featuring dynamic widgets, a custom theme system, and a RAG chatbot interface with file upload functionality.</li>
+                    <li>A School Management System with role-based dashboards (Student, Teacher, Admin), academic payment integration using SSLCommerz, and attendance tracking.</li>
+                    <li>A Health AI Platform where users can update profiles, book specialists, generate and print prescriptions, and chat with doctors.</li>
+                    <li>A CV Automation System that includes filtering, previewing, downloading, and exporting CVs in PDF/XLSX formats.</li>
                 </ul>
             </div>
 

@@ -37,6 +37,14 @@
 .gradient-border-nav {
     border: 2px solid transparent;
     background: linear-gradient(#0d1117, #0d1117) padding-box,
-    linear-gradient(to right, #fb7185, #eea75b) border-box;
+        linear-gradient(to right, #fb7185, #eea75b) border-box;
     border-radius: 64px;
+}
+
+.gradient-btn {
+    border: 2px solid transparent;
+    background: linear-gradient(#0d1117, #0d1117) padding-box,
+        linear-gradient(to right, #fb7185, #eea75b) border-box;
+    border-radius: 8px;
+    padding: 0px 6px;
 }

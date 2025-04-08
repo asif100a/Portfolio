@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useInterSectionObserver } from "../../../hooks/useIntersectionObserver";
+>>>>>>> master
 import Footer from "../../sharedFile/footer/Footer";
 import Navbar from "../../sharedFile/navbar/Navbar";
 import About from "./components/About/About";
@@ -9,11 +13,13 @@ import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 
 const Home = () => {
+    const [sectionRef, isIntersecting] = useInterSectionObserver();
+
     return (
-        <div>
-            <Navbar />
+        <div className="overflow-hidden">
+            <Navbar isIntersecting={isIntersecting} />
             <div className="bg-[#0d1117] text-white">
-                <Banner />
+                <Banner sectionRef={sectionRef} />
                 <About />
                 <Education />
                 <Skills />
