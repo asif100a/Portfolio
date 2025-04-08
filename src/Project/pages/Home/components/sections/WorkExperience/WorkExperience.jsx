@@ -1,12 +1,12 @@
-import projectPhoto1 from '../../../../../assets/Intern-project-1.png';
-import projectPhoto2 from '../../../../../assets/Intern-project-2a.jpg';
-import projectPhoto3 from '../../../../../assets/Intern-project-2b.png';
+import projectPhoto1 from '../../../../../../assets/Intern-project-1.png';
+import projectPhoto2 from '../../../../../../assets/Intern-project-2a.jpg';
+import projectPhoto3 from '../../../../../../assets/Intern-project-2b.png';
 
 const WorkExperience = () => {
     return (
         <section id="work-experience" className="my-16 xl:mx-32 md:mx-6 mx-3">
-            <div>
-                <h1 className="text-4xl font-semibold">Work Experience</h1>
+            <div className="w-fit px-6 py-2 border border-gray-400 rounded-lg shadow-lg">
+                <h1 className="text-4xl font-semibold">💼 Work Experience</h1>
             </div>
 
             <div className="lg:mt-12 mt-6 space-y-6">

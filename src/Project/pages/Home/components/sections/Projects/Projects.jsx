@@ -1,13 +1,13 @@
-import bloodDonorImg from '../../../../../assets/blood-donor-unity.png';
-import assignmentImg from '../../../../../assets/assignment-genius.png';
-import awesomeTouristImg from '../../../../../assets/awesome-tourist-spots.png';
+import bloodDonorImg from '../../../../../../assets/blood-donor-unity.png';
+import assignmentImg from '../../../../../../assets/assignment-genius.png';
+import awesomeTouristImg from '../../../../../../assets/awesome-tourist-spots.png';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
         <section id='projects' className="my-16 xl:mx-32 md:mx-6 mx-3">
-            <div>
-                <h1 className="text-4xl font-semibold">My Projects</h1>
+            <div className="w-fit px-6 py-2 border border-gray-400 rounded-lg shadow-lg">
+                <h1 className="text-4xl font-semibold">🚀 My Projects</h1>
             </div>
 
             <div className="container px-0 py-10 mx-auto">

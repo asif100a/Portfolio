@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import skill_2 from "../../../../../../assets/skill-2.jpeg";
+import skill_3 from "../../../../../../../assets/skill-3.jpeg";
 import { useInView } from 'react-intersection-observer';
 
-const Skill_2 = () => {
+const Skill_3 = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -43,13 +43,19 @@ const Skill_2 = () => {
     };
 
     return (
-        <div ref={ref} className="flex flex-col sm:flex-row gap-3 lg:gap-12 overflow-hidden">
+        <div ref={ref} className="flex flex-col-reverse sm:flex-row gap-3 lg:gap-12 overflow-hidden">
             <motion.div
-                initial={'hidden'}
+                initial='hidden'
                 animate={controls}
                 variants={leftVarients}
             >
-                <img src={skill_2} alt="Skill photo 2" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
+                <h2 className="text-2xl font-semibold">Tools & Technologies</h2>
+                <ul className="mt-4 list-circle ml-12">
+                    <li><span className="font-bold">Version Control:</span> Proficient in Git and GitHub for version control and collaborative development.</li>
+                    <li><span className="font-bold">Build Tools:</span> Experience with Webpack, Babel, and npm/Yarn for optimizing and managing project dependencies.</li>
+                    <li><span className="font-bold">Testing:</span> Familiarity with testing frameworks like Jest and React Testing Library for ensuring code quality and reliability.</li>
+                    <li><span className="font-bold">RESTful APIs:</span> Ability to integrate and interact with RESTful APIs to fetch and manipulate data.</li>
+                </ul>
             </motion.div>
 
             <motion.div
@@ -57,15 +63,10 @@ const Skill_2 = () => {
                 animate={controls}
                 variants={rightVarients}
             >
-                <h2 className="text-2xl font-semibold">UI/UX Design</h2>
-                <ul className="mt-4 list-circle ml-12">
-                    <li><span className="font-bold">User-Centric Design:</span> Focus on creating intuitive and user-friendly interfaces.</li>
-                    <li><span className="font-bold">Wireframing & Prototyping:</span> Experience with tools like Figma and Adobe XD for designing and prototyping user interfaces.</li>
-                    <li><span className="font-bold">Accessibility:</span> Knowledge of web accessibility standards and practices to ensure inclusive user experiences.</li>
-                </ul>
+                <img src={skill_3} alt="Skill photo 3" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
             </motion.div>
         </div>
     );
 };
 
-export default Skill_2;
+export default Skill_3;

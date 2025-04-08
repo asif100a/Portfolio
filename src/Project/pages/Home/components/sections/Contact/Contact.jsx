@@ -14,28 +14,30 @@ const Contact = () => {
     // Send the message
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs
-          .sendForm('service_gsyvmua', 'template_3shoy0h', form.current, {
-            publicKey: 'M8ZdPyX2WzkQORfB8',
-          })
-          .then(
-            () => {
-              console.log('SUCCESS!');
-              toast.success('Message has sent successfully');
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-              toast.error('Failed to sent message');
-            },
-          );
-      };
+            .sendForm('service_gsyvmua', 'template_3shoy0h', form.current, {
+                publicKey: 'M8ZdPyX2WzkQORfB8',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    toast.success('Message has sent successfully');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    toast.error('Failed to sent message');
+                },
+            );
+    };
 
     return (
         <section id="contact" className="mt-16 pb-12 xl:mx-32 md:mx-6 mx-3">
             <div className="container mx-auto">
                 <div>
-                    <h1 className="text-4xl font-semibold">Contact Me</h1>
+                    <div className="w-fit px-6 py-2 border border-gray-400 rounded-lg shadow-lg">
+                        <h1 className="text-4xl font-semibold">📬 Contact Me</h1>
+                    </div>
 
                     <div className="mt-6">
                         <h1 className="mt-2 text-xl font-semibold md:text-2xl">{"Let's"} Connect!</h1>

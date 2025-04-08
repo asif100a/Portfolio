@@ -1,6 +1,6 @@
 import { useState } from "react";
-import roundImg from "../../../../../assets/asif_round.png";
-import web_developmentImg from "../../../../../assets/web-development.jpeg";
+import roundImg from "../../../../../../assets/asif_round.png";
+import web_developmentImg from "../../../../../../assets/web-development.jpeg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
 import './about.css';
@@ -11,8 +11,8 @@ const About = () => {
     return (
         <section id="about" className="my-16 xl:mx-32 md:mx-6 mx-3">
             <div className="">
-                <div>
-                    <h1 className="text-4xl font-semibold">About Me</h1>
+                <div className="w-fit px-6 py-2 border border-gray-400 rounded-lg shadow-lg">
+                    <h1 className="text-4xl font-semibold">🏠 About Me</h1>
                 </div>
                 <div className="my-6">
                     <div className="flex lg:flex-row flex-col lg:gap-12 gap-6">

@@ -1,14 +1,14 @@
 import './marquee.css';
-import ReactLogo from '../../../../../../assets/React-Logo.png';
-import NextLogo from '../../../../../../assets/Next.js-Logo-2.webp';
-import JavaScriptLogo from '../../../../../../assets/JavaScript-Logo.png';
-import TypeScriptLogo from '../../../../../../assets/TypeScript-Logo.png';
-import HTMLLogo from '../../../../../../assets/HTML5-Logo.png';
-import CSSLogo from '../../../../../../assets/CSS-Logo.png';
-import TailwindCSSLogo from '../../../../../../assets/TailwindCSS-Logo.png';
-import GithubLogo from '../../../../../../assets/Github-Logo.png';
-import ReduxLogo from '../../../../../../assets/Redux-Logo.webp';
-import FirebaseLogo from '../../../../../../assets/Firebase-Logo.png';
+import ReactLogo from '../../../../../../../assets/React-Logo.png';
+import NextLogo from '../../../../../../../assets/Next.js-Logo-2.webp';
+import JavaScriptLogo from '../../../../../../../assets/JavaScript-Logo.png';
+import TypeScriptLogo from '../../../../../../../assets/TypeScript-Logo.png';
+import HTMLLogo from '../../../../../../../assets/HTML5-Logo.png';
+import CSSLogo from '../../../../../../../assets/CSS-Logo.png';
+import TailwindCSSLogo from '../../../../../../../assets/TailwindCSS-Logo.png';
+import GithubLogo from '../../../../../../../assets/Github-Logo.png';
+import ReduxLogo from '../../../../../../../assets/Redux-Logo.webp';
+import FirebaseLogo from '../../../../../../../assets/Firebase-Logo.png';
 
 const Marquee = () => {
     return (

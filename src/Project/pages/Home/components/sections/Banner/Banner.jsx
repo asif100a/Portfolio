@@ -1,26 +1,33 @@
 import { SlSettings } from "react-icons/sl";
-import codingLaptop from "../../../../../assets/Coding-laptop.png";
-import DownloadResume from "../downloadResume/DownloadResume";
+import codingLaptop from "../../../../../../assets/Coding-laptop.png";
+import DownloadResume from "../../UI/downloadResume/DownloadResume";
 import "./banner.css";
 import { Link } from "react-scroll";
 import Marquee from "./component/Marquee";
-import { items } from "../../../../../utils/utils";
+import { items } from "../../../../../../utils/utils";
 import PropTypes from "prop-types";
+import GradientBorderBtn from "../../UI/buttons/GradientBorderBtn";
 
-const Banner = ({sectionRef}) => {
-    console.log( sectionRef)
-
+const Banner = ({ sectionRef }) => {
     const navItems1 = <>
         {
             items.slice(0, 4).map((item, i) => (
-                <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora lg:text-base xl:text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+                <li key={i}>
+                    <GradientBorderBtn>
+                        <Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link>
+                    </GradientBorderBtn>
+                </li>
             ))
         }
     </>;
     const navItems2 = <>
         {
             items.slice(4).map((item, i) => (
-                <li key={i} className="hover:cursor-pointer gradient-link-border font-medium font-text-lora lg:text-base xl:text-lg"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+                <li key={i}>
+                    <GradientBorderBtn>
+                        <Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link>
+                    </GradientBorderBtn>
+                </li>
             ))
         }
     </>;

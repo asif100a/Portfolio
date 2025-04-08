@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 import { motion, useAnimation } from 'framer-motion';
-import skill_3 from "../../../../../../assets/skill-3.jpeg";
+import skill_1 from "../../../../../../../assets/skill-1.jpg";
 import { useInView } from 'react-intersection-observer';
 
-const Skill_3 = () => {
+const Skill_1 = () => {
     const controls = useAnimation();
-    const [ref, inView] = useInView({ triggerOnce: true });
+    const [ref, inView] = useInView({triggerOnce: true});
 
     // Implement inview functionality 
     React.useEffect(() => {
-        if (inView) {
+        if(inView) {
             controls.start('visible');
         }
     }, [inView, controls]);
@@ -45,28 +45,28 @@ const Skill_3 = () => {
     return (
         <div ref={ref} className="flex flex-col-reverse sm:flex-row gap-3 lg:gap-12 overflow-hidden">
             <motion.div
-                initial='hidden'
-                animate={controls}
                 variants={leftVarients}
+                initial="hidden"
+                animate={controls}
             >
-                <h2 className="text-2xl font-semibold">Tools & Technologies</h2>
+                <h2 className="text-2xl font-semibold">Front-End Development</h2>
                 <ul className="mt-4 list-circle ml-12">
-                    <li><span className="font-bold">Version Control:</span> Proficient in Git and GitHub for version control and collaborative development.</li>
-                    <li><span className="font-bold">Build Tools:</span> Experience with Webpack, Babel, and npm/Yarn for optimizing and managing project dependencies.</li>
-                    <li><span className="font-bold">Testing:</span> Familiarity with testing frameworks like Jest and React Testing Library for ensuring code quality and reliability.</li>
-                    <li><span className="font-bold">RESTful APIs:</span> Ability to integrate and interact with RESTful APIs to fetch and manipulate data.</li>
+                    <li><span className="font-bold">HTML5 & CSS3:</span> Expertise in building responsive, accessible, and well-structured web pages.</li>
+                    <li><span className="font-bold">JavaScript (ES6+):</span> Proficient in modern JavaScript features and best practices.</li>
+                    <li><span className="font-bold">React:</span> Skilled in developing dynamic single-page applications using React, including Hooks, Context API, and state management etc.</li>
+                    <li><span className="font-bold">Responsive Design:</span> Strong ability to create responsive layouts using CSS Flexbox, Grid, and media queries.</li>
                 </ul>
             </motion.div>
 
             <motion.div
-                initial='hidden'
-                animate={controls}
                 variants={rightVarients}
+                initial="hidden"
+                animate={controls}
             >
-                <img src={skill_3} alt="Skill photo 3" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
+                <img src={skill_1} alt="Skill photo 1" className="w-full md:w-[520px] lg:w-[420px] h-[272px]" />
             </motion.div>
         </div>
     );
 };
 
-export default Skill_3;
+export default Skill_1;

@@ -1,13 +1,13 @@
 import { useInterSectionObserver } from "../../../hooks/useIntersectionObserver";
 import Footer from "../../sharedFile/footer/Footer";
 import Navbar from "../../sharedFile/navbar/Navbar";
-import About from "./components/About/About";
-import Banner from "./components/Banner/Banner";
-import Contact from "./components/Contact/Contact";
-import Education from "./components/Education/Education";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
-import WorkExperience from "./components/WorkExperience/WorkExperience";
+import About from "./components/sections/About/About";
+import Banner from "./components/sections/Banner/Banner";
+import Contact from "./components/sections/Contact/Contact";
+import Education from "./components/sections/Education/Education";
+import Projects from "./components/sections/Projects/Projects";
+import Skills from "./components/sections/Skills/Skills";
+import WorkExperience from "./components/sections/WorkExperience/WorkExperience";
 
 const Home = () => {
     const [sectionRef, isIntersecting] = useInterSectionObserver();
@@ -20,8 +20,8 @@ const Home = () => {
                 <About />
                 <Education />
                 <Skills />
-                <Projects />
                 <WorkExperience />
+                <Projects />
                 <Contact />
             </div>
             <Footer />
