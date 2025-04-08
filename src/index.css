@@ -3,3 +3,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-text{
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.gradient-text-link{
+    color: white;
+}
+
+.gradient-text-link:hover{
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.gradient-bg{
+    background: transparent;
+    border-radius: 8px;
+}
+
+.gradient-bg:hover{
+    background: linear-gradient(90deg, #fb7185, #eea75b);
+}

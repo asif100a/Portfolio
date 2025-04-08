@@ -13,9 +13,9 @@ const Banner = ({ sectionRef }) => {
         {
             items.slice(0, 4).map((item, i) => (
                 <li key={i}>
-                    <GradientBorderBtn>
-                        <Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link>
-                    </GradientBorderBtn>
+                    <Link to={item?.path} smooth={true} duration={600}>
+                        <GradientBorderBtn text={item.title} type={'link'} />
+                    </Link>
                 </li>
             ))
         }
@@ -24,9 +24,9 @@ const Banner = ({ sectionRef }) => {
         {
             items.slice(4).map((item, i) => (
                 <li key={i}>
-                    <GradientBorderBtn>
-                        <Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link>
-                    </GradientBorderBtn>
+                    <Link to={item?.path} smooth={true} duration={600}>
+                        <GradientBorderBtn text={item.title} type={'link'} />
+                    </Link>
                 </li>
             ))
         }

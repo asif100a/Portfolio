@@ -26,13 +26,13 @@
     border-radius: 0px;
 }
 
-.gradient-text {
+/* .gradient-text {
     background: linear-gradient(90deg, #fb7185, #eea75b);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-}
+} */
 
 .gradient-border-nav {
     border: 2px solid transparent;
