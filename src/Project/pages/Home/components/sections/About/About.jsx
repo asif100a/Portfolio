@@ -28,7 +28,7 @@ const About = () => {
                             </div>
                             <div className="my-6 space-y-3">
                                 <h4 className="text-xl font-medium mb-3">Hi! there,</h4>
-                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">Hi, I’m N.M. Asif Sheikh, a passionate Fullstack Engineer with real-world experience in building scalable and user-friendly web applications. Currently, I’m working as a Fullstack Engineer Intern at NxtVis, where I’ve been deeply involved in developing production-ready applications from the ground up.</p>
+                                <p className="xl:w-[42rem] lg:w-[32rem] md:w-full w-auto">Hi, I’m N.M. Asif Sheikh, a passionate Fullstack Engineer with real-world experience in building scalable and user-friendly web applications. Currently, I’ve worked as a Fullstack Engineer Intern at NxtVis, where I’ve been deeply involved in developing production-ready applications from the ground up.</p>
                                 <p>I specialize in both front-end and back-end technologies including React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB. During my internship, I’ve worked on various impactful projects.</p>
                             </div>
 
