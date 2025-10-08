@@ -21,11 +21,11 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    // console.log('SUCCESS!');
                     toast.success('Message has sent successfully');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    console.error('FAILED...', error.text);
                     toast.error('Failed to sent message');
                 },
             );
