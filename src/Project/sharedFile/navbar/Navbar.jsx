@@ -33,7 +33,11 @@ const Navbar = ({ isIntersecting }) => {
     const navItems = <>
         {
             items.map((item, i) => (
-                <li key={i} className="cursor-pointer font-medium font-text-lora text-base gradient-btn text-nowrap"><Link to={item?.path} smooth={true} duration={600}>{item?.title}</Link></li>
+                <li key={i} className="cursor-pointer font-medium font-text-lora text-base gradient-btn text-nowrap">
+                    <Link to={item?.path} smooth={true} duration={600}>
+                        <button onClick={() => setShowDropdown(false)}>{item?.title}</button>
+                    </Link>
+                </li>
             ))
         }
     </>;
@@ -41,9 +45,9 @@ const Navbar = ({ isIntersecting }) => {
     return (
         <header className={`w-full h-fit bg-[#0d1117] relative`}>
             <div className={`w-full px-0 md:px-6 xl:px-28 pt-3 lg:pt-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-                <div className="w-full h-fit px-3 md:px-6 lg:px-16 py-3 gradient-border-nav">
+                <div className="w-full h-fit px-3 md:px-4 py-2 md:py-4 gradient-border-nav">
                     <div className="flex justify-between items-center">
-                        <h3 className="sm:text-3xl text-xl font-semibold gradient-text ml-4 lg:ml-0 text-nowrap">Fullstack Engineer</h3>
+                        <h3 className="sm:text-3xl text-xl font-semibold gradient-text ml-3 text-nowrap">React/React Native Developer</h3>
                         <nav className="text-white relative">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                                 {showDropdown ? (
