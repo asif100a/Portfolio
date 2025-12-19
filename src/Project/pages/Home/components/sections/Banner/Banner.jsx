@@ -46,7 +46,7 @@ const Banner = ({ sectionRef }) => {
                         <h1 className="gradient-text font-text-lora">Welcome to</h1>
                         <div className="hidden lg:block">
                             <h1 className="jacques-francois-shadow gradient-text appear-disappear">N.M. Asif Sheikh</h1>
-                            <p className="text-sm md:text-base lg:text-xl xl:text-3xl font-semibold font-text-lora bg-gradient-to-r from-rose-400 to-orange-300 px-4 py-1 w-fit rounded-full mt-1">Fullstack Engineer & UI/UX Enthusiast</p>
+                            <p className="text-sm md:text-base lg:text-xl xl:text-3xl font-semibold font-text-lora bg-gradient-to-r from-rose-400 to-orange-300 px-4 py-1 w-fit rounded-full mt-1">React/React Native Developer</p>
                         </div>
                     </div>
                 </div>

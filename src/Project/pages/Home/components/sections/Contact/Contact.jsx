@@ -67,7 +67,7 @@ const Contact = () => {
 
                             <h2 className="mt-4 text-base font-medium">Linked in</h2>
                             <p className="mt-2 text-sm">Contact and explore my linked in profile.</p>
-                            <Link to="https://www.linkedin.com/in/n-m-asif-sheikh" target="_blank" className="mt-2 text-sm text-[#eea75b]">Linked in profile</Link>
+                            <Link to="https://www.linkedin.com/in/nm-asif-sheikh/" target="_blank" className="mt-2 text-sm text-[#eea75b]">Linked in profile</Link>
                         </div>
 
                         <div>
